@@ -3,9 +3,9 @@
   session_start();
 
   // POSTリクエストから入力データを取得
-  $name = $_POST['user_name'];
-  $age = $_POST['user_age'];
-  $category = $_POST['category'];
+  $name = $_POST['employee_name'];
+  $age = $_POST['employee_age'];
+  $category = $_POST['department'];
   
 
   // エラーメッセージを格納する配列
@@ -55,7 +55,7 @@
                 <th>入力内容</th>
             </tr>
             <tr>
-                <td>お名前</td>
+                <td>社員名</td>
                 <td><?php echo $name; ?></td>
             </tr>
             <tr>
